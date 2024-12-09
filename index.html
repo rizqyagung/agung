@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rizqy Agung Saputra</title>
+  <style>
+    
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      background: linear-gradient(to bottom, #141e30, #243b55);
+    }
+    h1, h2, p {
+      margin: 0;
+      padding: 10px 0;
+    }
+    section {
+      padding: 40px;
+      text-align: center;
+    }
+
+    
+    .hero {
+      height: 100vh;
+      background: url('me.jpg') no-repeat center center/cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      animation: fadeIn 3s ease-in-out;
+    }
+    .typing-effect {
+      border-right: 2px solid #fff;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 3s steps(20) infinite alternate;
+    }
+
+    
+    .about {
+      background: #243b55;
+    }
+    .timeline {
+      max-width: 800px;
+      margin: auto;
+      text-align: left;
+    }
+    .timeline-item {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #fff;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s;
+    }
+    .timeline-item:hover {
+      transform: scale(1.05);
+    }
+
+    
+    .hobbies {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .hobby {
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .hobby img {
+      width: 100px;
+    }
+    .hobby:hover {
+      transform: translateY(-10px);
+    }
+
+   
+    .football {
+      background: #f5f5f5;
+      color: black;
+    }
+    .teams {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+    .teams img {
+      width: 120px;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+      40% { transform: translateY(-20px); }
+      60% { transform: translateY(-10px); }
+    }
+
+    
+    .contact form {
+      max-width: 600px;
+      margin: auto;
+    }
+    .contact input, .contact textarea, .contact button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 5px;
+    }
+    .contact button {
+      background: #ff4747;
+      color: white;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .contact button:hover {
+      background: #ff7878;
+    }
+
+    
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes typing {
+      from { width: 0; }
+      to { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+ 
+  <div class="hero">
+    <h1>Halo, Saya <span class="typing-effect">Rizqy Agung Saputra</span></h1>
+    <p>Selamat datang di dunia saya yang penuh dengan musik dan sepak bola!</p>
+  </div>
+
+  <section class="about">
+    <h2>Tentang Saya</h2>
+  </section>
+
+  <footer>
+    <h2>Ikuti Saya</h2>
+    <ul class="social-links">
+      <li><a href="https://www.instagram.com/rzzqyagng" target="_blank" title="Instagram"><img src="instagram.jpg" alt="Instagram" style="width: 30px;"></a></li>
+      <li><a href="https://www.facebook.com/rizqy.saputra.9638" target="_blank" title="Facebook"><img src="facebook.jpg" alt="Facebook" style="width: 30px;"></a></li>
+      <li><a href="https://x.com/RizqyAgung_9" target="_blank" title="X"><img src="X.jpg" alt="X" style="width: 30px;"></a></li>
+    </ul>
+  </footer>
+
+    <div class="timeline">
+      <div class="timeline-item">
+        <strong>Taman Kanak-Kanak:</strong> TK Pusposari 4
+      </div>
+      <div class="timeline-item">
+        <strong>Sekolah Dasar:</strong> SD Negeri Ngrenak
+      </div>
+      <div class="timeline-item">
+        <strong>Sekolah Menengah Pertama:</strong> SMP Negeri 2 Godean
+      </div>
+      <div class="timeline-item">
+        <strong>Sekolah Menengah Kejuruan:</strong> SMK Negeri 1 Seyegan
+      </div>
+    </div>
+  </section>
+
+ 
+  <section class="hobbies">
+    <h2>Hobi Saya</h2>
+    <div class="hobbies">
+      <div class="hobby">
+        <img src="football.jpg" alt="Sepak Bola">
+        <p>Sepak Bola</p>
+      </div>
+      <div class="hobby">
+        <img src="music.jpg" alt="Mendengarkan Musik">
+        <p>Mendengarkan Musik</p>
+      </div>
+    </div>
+  </section>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #141e30, #243b55);
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 50px;
+    }
+
+    .hobby {
+      margin-top: 50px;
+    }
+
+    .hobby img {
+      width: 150px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .hobby img:hover {
+      transform: scale(1.1);
+    }
+
+    .song-list {
+      margin-top: 20px;
+      display: none; 
+    }
+
+    .song-list ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .song-list li {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 5px;
+    }
+
+    .close-btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background: #ff4747;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      display: none; 
+    }
+
+    .close-btn:hover {
+      background: #ff7878;
+    }
+  </style>
+</head>
+<body>
+  <h1>Musik Favorit Rizqy</h1>
+  <div class="hobby">
+    <p>Klik gambar di bawah untuk melihat lagu favorit saya / klik logo spotify di bawah untuk masuk ke playlist spotiy saya</p>
+    <img src="musik.jpg" alt="Mendengarkan Musik" id="music-icon">
+    <a href="https://open.spotify.com/playlist/2D41esRllwYz8ULUtlIkU4?si=1wvp-Lx8TCmay55Jo2QrcA"target="_blank" title="Spotify"><img src="Spotify.jpg" alt="Spotify" style="width: 90px;"></a></li>
+  </div>
+
+  <div class="song-list" id="song-list">
+    <h2>Daftar Lagu Favorit</h2>
+    <ul>
+      <li>Over Distortion - Sepak Bola Selalu</li>
+      <li>Over Distortion - 10 Tahun Di Barisan</li>
+      <li>Over Distortion - Selebrasi</li>
+      <li>Old Friends - Romansa Di Tribun selatan</li>
+      <li>Old Friends - Pesta Pora</li>
+      <li>Old Friends - Paruh Baya</li>
+      <li>Neckemic - Sampai Jumpa</li>
+      <li>Neckemic - Stick Together</li>
+      <li>The Cloves and Tobacco - Tapak Tilas Kerinduan</li>
+      <li>The Cloves and Tobacco - Sunyi Tanah Peristirahatan</li>
+    </ul>
+  </div>
+
+  <button class="close-btn" id="close-btn">Tutup</button>
+
+  <script>
+    
+    const musicIcon = document.getElementById('music-icon');
+    const songList = document.getElementById('song-list');
+    const closeButton = document.getElementById('close-btn');
+
+   
+    musicIcon.addEventListener('click', () => {
+      songList.style.display = 'block'; 
+      closeButton.style.display = 'inline-block'; 
+    });
+
+    
+    closeButton.addEventListener('click', () => {
+      songList.style.display = 'none'; 
+      closeButton.style.display = 'none'; 
+    });
+  </script>
+
+ 
+  <section class="football">
+    <h2>Tim Favorit Saya</h2>
+    <div class="teams">
+      <div>
+        <img src="pss.jpg" alt="PSS Sleman">
+        <p>PSS Sleman</p>
+      </div>
+      <div>
+        <img src="liverpool.jpg" alt="Liverpool">
+        <p>Liverpool</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="football">
+    <h2>band Favorit Saya</h2>
+    <div class="teams">
+      <div>
+        <img src="od.jpg" alt="Over Distortion">
+        <p>Over Distortion</p>
+      </div>
+    </div>
+  </section>
+
+  
+  <section class="contact">
+    <h2>Kontak Saya</h2>
+    <form>
+      <input type="text" placeholder="Nama Anda" required>
+      <input type="email" placeholder="Email Anda" required>
+      <textarea placeholder="Pesan Anda" required></textarea>
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+
+  <script>
+    
+    const typingElement = document.querySelector('.typing-effect');
+    const words = ['Rizqy Agung Saputra', 'Penggemar Musik', 'Pencinta Sepak Bola'];
+    let wordIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+      const currentWord = words[wordIndex];
+      if (isDeleting) {
+        typingElement.textContent = currentWord.substring(0, charIndex--);
+        if (charIndex < 0) {
+          isDeleting = false;
+          wordIndex = (wordIndex + 1) % words.length;
+        }
+      } else {
+        typingElement.textContent = currentWord.substring(0, charIndex++);
+        if (charIndex === currentWord.length) {
+          isDeleting = true;
+        }
+      }
+      setTimeout(type, isDeleting ? 100 : 200);
+    }
+
+    type();
+  </script>
+</body>
+</html>
